@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 /*Mostrar log in*/
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/', function () {
+    return view('inicio');
 });
+
 
 /*Mostrar menu empleado*/
 Route::get('/visius_empleados', function () {
