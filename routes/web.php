@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\InicioController;
+use App\Http\Controllers\EmpleadosController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -13,53 +14,31 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-/*Mostrar log in*/
-
+/*Ruta Inicio*/
 Route::get('/', function () {
     return view('inicio');
 });
 
-
-/*Mostrar menu empleado*/
-Route::get('/visius_empleados', function () {
-    return view('Empleado/menu');
+Route::get('/InicioAdmi', function () {
+    return view('/Admi/InicioAdmi');
 });
 
-/*Monstrar mis tareas*/
-Route::get('/visius_mis_tareas', function () {
-    return view('Empleado/tareas');
+Route::get('/InicioEmpleado', function () {
+    return view('/empleados/InicioEmpleado');
 });
 
-/*Monstrar mi info empleado*/
-Route::get('/visius_mi_info_empleado', function () {
-    return view('Empleado/minfo');
+Route::get('/InicioSupervisor', function () {
+    return view('/Supervisor/InicioSupervisor');
 });
 
-/*Mostrar menu supervisor*/
-Route::get('/visius_supervisores', function () {
-    return view('Supervisor/menu');
-});
+// ruta para mostrar empleados
 
-/*Monstrar mi info supervisor*/
-Route::get('/visius_mi_info_supervisor', function () {
-    return view('Supervisor/minfo');
-});
-
-/*Monstrar mi tab Empleados*/
-Route::get('/visius_ver_empleados', function () {
-    return view('Supervisor/empleadosup');
-});
-
-/*Monstrar mi tab Empleados*/
-Route::get('/visius_asignar_tareas', function () {
-    return view('Supervisor/asignar');
-});
+Route::get('/empleados/show',[EmpleadosController::class, 'index']);
 
 
-/*Monstrar menu admin*/
-Route::get('/visius_admin', function () {
-    return view('Admin/menu');
-});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route::get('/IAdmi', [App\Http\Controllers\InicioController::class, 'vista'])->name('IAdmi');
+

@@ -1,7 +1,10 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
+use App\Models\Branch;
+use App\Models\EmpleadosModel;
 use Illuminate\Http\Request;
 
 class EmpleadosController extends Controller
@@ -11,7 +14,8 @@ class EmpleadosController extends Controller
      */
     public function index()
     {
-        //
+        // vista carpeta/archivo
+        return view('/empleados/show');
     }
 
     /**

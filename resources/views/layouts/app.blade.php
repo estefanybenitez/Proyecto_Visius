@@ -7,13 +7,15 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Visius') }}</title>
+    
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
+
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
@@ -21,7 +23,10 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="../imgs/icon.ico" class="logo">
+
+                    {{ config('app.name', 'Visius') }}
+                    
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -49,21 +54,18 @@
                                 </li>
                             @endif
                         @else                       
-                                {{-- opciones ya trabajadas --}}                           
+                                {{-- opciones ya trabajadas --}}                          
+
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Tareas S</a>
+                                <a class="nav-link" href="/InicioEmpleado">Empleados</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Tareas E</a>
+                                <a class="nav-link" href="/InicioAdmi">Admi</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Empleados</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Usuarios</a>
+                                <a class="nav-link" href="/InicioSupervisor">Supervisor</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -90,9 +92,10 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <div class="container-fluid">
             @yield('content')
-        </main>
+          </div>
     </div>
 </body>
 </html>
+@yield('scripts')

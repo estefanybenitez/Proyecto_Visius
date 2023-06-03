@@ -16,7 +16,7 @@
    
 
     <link rel="stylesheet" type="text/css" href="../resources/css/menusup.css">
-    <script src="../resources/js/empleadosup.js"></script>
+    <script src="./js/empleadosup.js"></script>
 
     <link rel="shortcut icon" href="../imgs/logosup.ico">
 

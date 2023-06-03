@@ -17,9 +17,9 @@
   @endcomponent
 
   {{-- aqui tendremos el contenido de las paginas --}}
-      <div class="container-fluid">
+      {{-- <div class="container-fluid">
         @yield('content')
-      </div>
+      </div> --}}
 </body>
 </html>
 
