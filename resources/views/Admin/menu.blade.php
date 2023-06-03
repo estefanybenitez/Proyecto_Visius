@@ -44,7 +44,7 @@
               <a class="nav-link active coloropcion" aria-current="page" href="#"><i class="bi bi-person-circle"></i> Mi Info</a>
             </li>
             <li class="nav-item" >
-              <a class="nav-link active coloropcion" aria-current="page" href="http://localhost/visius/public/login"><i class="bi bi-arrow-right-square"></i> Salir</a>
+              <a class="nav-link active coloropcion" aria-current="page" href="/login"><i class="bi bi-arrow-right-square"></i> Salir</a>
             </li>
           </ul>
         </div>
