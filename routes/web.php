@@ -58,3 +58,6 @@ Route::get('/visius_asignar_tareas', function () {
 Route::get('/visius_admin', function () {
     return view('Admin/menu');
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
