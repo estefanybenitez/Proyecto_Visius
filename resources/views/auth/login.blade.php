@@ -10,6 +10,9 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/login.css">
 <link rel="shortcut icon" href="../imgs/icon.ico">
 <title>Visius Login</title>
+
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
 </head>
 <body class="p-3 m-0 border-0 bd-example">
     <section class="h-100 gradient-form fondo" style="background-color: black;">
@@ -85,8 +88,7 @@
                         <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                             <div class="px-3 py-4 p-md-5 mx-md-4">
                                 {{-- <img src="../imgs/logo3.PNG" class="logo">  --}}
-                                <img src="...../imgs/logo3.PNG" class="logo"> 
-
+                                <img src="../imgs/logo3.PNG" class="logo"> 
                             </div>
                         </div>
                     </div>
@@ -99,3 +101,4 @@
 
 
 @endsection
+@yield('scripts')
