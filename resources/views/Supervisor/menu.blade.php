@@ -17,8 +17,8 @@
 
    
 
-    <link rel="stylesheet" type="text/css" href="../resources/css/menusup.css">
-    <link rel="shortcut icon" href="../imgs/logosup.ico">
+    <link rel="stylesheet" type="text/css" href="./css/menusup.css">
+    <link rel="shortcut icon" href="./imgs/logosup.ico">
 
     <title>Visius Menu</title>
   </head>

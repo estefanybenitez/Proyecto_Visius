@@ -31,9 +31,10 @@ Route::get('/InicioSupervisor', function () {
     return view('/Supervisor/InicioSupervisor');
 });
 
+
 // ruta para mostrar empleados
 
-Route::get('/empleados/show',[EmpleadosController::class, 'index']);
+Route::get('/CrudEmpleado/show',[EmpleadosController::class, 'index']);
 
 
 Auth::routes();

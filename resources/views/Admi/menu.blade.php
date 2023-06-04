@@ -16,8 +16,8 @@
 
    
 
-    <link rel="stylesheet" type="text/css" href="../resources/css/menuadmin.css">
-    <link rel="shortcut icon" href="../imgs/icon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/menuadmin.css">
+    <link rel="shortcut icon" href="./imgs/icon.ico">
     <title>Visius Menu</title>
   </head>
   <body class="p-3 m-0 border-0 bd-example">

@@ -15,7 +15,8 @@ class EmpleadosController extends Controller
     public function index()
     {
         // vista carpeta/archivo
-        return view('/empleados/show');
+        $empleados = EmpleadosModel::all();
+        return view('/CrudEmpleado/show', compact('empleados')) ;
     }
 
     /**

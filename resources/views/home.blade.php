@@ -13,7 +13,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="./css/menuadmin.css">
-<link rel="shortcut icon" href="../imgs/icon.ico">
+<link rel="shortcut icon" href="./imgs/icon.ico">
 <title>Visius Menu</title>
 </head>
 

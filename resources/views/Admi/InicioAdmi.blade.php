@@ -28,10 +28,10 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: century gothic;">
 
             <li class="nav-item">
-              <a class="nav-link active coloropcion" aria-current="page" href="" > Gestionar Empleados</a>
+              <a class="nav-link active coloropcion" aria-current="page" href="/CrudEmpleado/show" > Gestionar Empleados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active coloropcion" aria-current="page" href="http://127.0.0.1:8000/crear_user" >Gestionar Usuarios</a>
+              <a class="nav-link active coloropcion" aria-current="page" href="/CrudUsuario/show" >Gestionar Usuarios</a>
             </li>
          
           </ul>
@@ -49,7 +49,7 @@
       </div>
     </nav>
     
-    
+    @yield('tabla')
    
     
 
@@ -76,6 +76,6 @@
 
   </body>
 </html>
-
+@yield('script')
 
 @endsection

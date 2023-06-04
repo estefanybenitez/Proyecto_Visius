@@ -27,8 +27,5 @@ class HomeController extends Controller
     }
 
     
-    public function vista()
-    {
-        return view('IAdmi');
-    }
+   
 }
