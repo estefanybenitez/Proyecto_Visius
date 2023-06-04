@@ -1,6 +1,8 @@
 <?php
+use App\Http\Controllers\EstadoTareaController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\AreaController;
+use App\Http\Controllers\TareasController;
 use App\Http\Controllers\EmpleadosController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -39,6 +41,10 @@ Route::get('/CrudEmpleado/show',[EmpleadosController::class, 'index']);
 Route::get('/CrudRoles/show',[RolesController::class, 'index']);
 // ruta para mostrar  vista area
 Route::get('/CrudArea/show',[AreaController::class, 'index']);
+// ruta para mostrar  vista tarea
+Route::get('/CrudTareas/show',[TareasController::class, 'index']);
+// ruta para mostrar  estado tarea
+Route::get('/CrudEstadoT/show',[EstadoTareaController::class, 'index']);
 
 
 

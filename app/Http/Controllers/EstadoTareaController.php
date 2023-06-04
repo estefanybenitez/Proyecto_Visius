@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\EstadoModel;
 use Illuminate\Http\Request;
 
 class EstadoTareaController extends Controller
@@ -12,6 +13,8 @@ class EstadoTareaController extends Controller
     public function index()
     {
         //
+        $estado_tarea = EstadoModel::all();
+        return view('/CrudEstadoT/show', compact('estado_tarea')) ;
     }
 
     /**

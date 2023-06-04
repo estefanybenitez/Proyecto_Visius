@@ -41,7 +41,13 @@
             <li class="nav-item">
               <a class="nav-link active coloropcion" aria-current="page" href="/CrudArea/show" >Tabla Area</a>
             </li>
-         
+            <li class="nav-item">
+              <a class="nav-link active coloropcion" aria-current="page" href="/CrudTareas/show" >Tabla Tareas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active coloropcion" aria-current="page" href="/CrudEstadoT/show" >Estado Tareas</a>
+            </li>
+
           </ul>
           <div class="d-flex" role="search">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: century gothic;">

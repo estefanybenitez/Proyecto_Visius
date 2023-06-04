@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TareaModel;
 use Illuminate\Http\Request;
 
 class TareasController extends Controller
@@ -12,6 +13,8 @@ class TareasController extends Controller
     public function index()
     {
         //
+        $tareas = TareaModel::all();
+        return view('/CrudTareas/show', compact('tareas')) ;
     }
 
     /**
