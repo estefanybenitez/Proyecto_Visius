@@ -48,6 +48,14 @@
               <a class="nav-link active coloropcion" aria-current="page" href="/CrudEstadoT/show" >Estado Tareas</a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link active coloropcion" aria-current="page" href="/CrudDetalleT/show" >Detalle Tareas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active coloropcion" aria-current="page" href="/CrudUsers/show" >Gestion Usuarios</a>
+            </li>
+
           </ul>
           <div class="d-flex" role="search">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: century gothic;">

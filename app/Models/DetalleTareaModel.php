@@ -9,7 +9,7 @@ class DetalleTareaModel extends Model
 {
     use HasFactory;
         //Nombre de la tabla
-        protected $table = 'detalle_tarea';
+        protected $table = 'tarea_detalle';
 
         //Llave primaria
         protected $primaryKey = 'id_detalle';

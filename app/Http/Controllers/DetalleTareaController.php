@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\DetalleTareaModel;
 use Illuminate\Http\Request;
 
 class DetalleTareaController extends Controller
@@ -12,6 +12,8 @@ class DetalleTareaController extends Controller
     public function index()
     {
         //
+        $tarea_detalle = DetalleTareaModel::all();
+        return view('/CrudDetalleT/show', compact('tarea_detalle')) ;
     }
 
     /**

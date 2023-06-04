@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\DetalleTareaController;
 use App\Http\Controllers\EstadoTareaController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\AreaController;
@@ -45,6 +46,8 @@ Route::get('/CrudArea/show',[AreaController::class, 'index']);
 Route::get('/CrudTareas/show',[TareasController::class, 'index']);
 // ruta para mostrar  estado tarea
 Route::get('/CrudEstadoT/show',[EstadoTareaController::class, 'index']);
+// ruta para mostrar  estado tarea
+Route::get('/CrudDetalleT/show',[DetalleTareaController::class, 'index']);
 
 
 
