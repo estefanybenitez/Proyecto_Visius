@@ -1,6 +1,6 @@
 <?php
-
 namespace App\Http\Controllers;
+use App\Models\RolModel;
 
 use Illuminate\Http\Request;
 
@@ -12,6 +12,8 @@ class RolesController extends Controller
     public function index()
     {
         //
+        $roles = RolModel::all();
+        return view('/CrudRoles/show', compact('roles'));
     }
 
     /**

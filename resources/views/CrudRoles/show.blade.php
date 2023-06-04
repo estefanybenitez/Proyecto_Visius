@@ -2,12 +2,12 @@
 @extends('Admi.InicioAdmi')
 
 {{-- Definimos el titulo --}}
-@section('title', 'Empleados')
+@section('title', 'Roles')
 
 {{-- Definimos el contenido --}}
 @section('tabla')
     {{-- <h1 class="text-center">Empleados</h1> --}}
-    <h5 class="text-center p-2 ">Listado de Empleados</h5>
+    <h5 class="text-center p-2 ">Roles
     <hr>
     {{-- Boton para ir al formulario de agregar producto --}}
     <br>
@@ -24,34 +24,21 @@
                     {{-- <tr class="table-dark"> --}}
                     <tr>
                         <td>C&oacute;digo</td>
-                        <td>Nombre</td>    
-                        <td>Correo</td>
-                        <td>Teléfono</td>
-                        <td>Fecha de Nacimiento</td>          
-                        <td>Fecha de Ingreso</td>      
-                        <td>Dirección</td>      
-                        <td>id rol</td>
-                        <td>id area</td>
+                        <td>Nombre Rol</td>    
                         <td>Acciones</td>
                     </tr>
 
                     {{-- Listado de productos --}}
-                    @foreach ($empleados as $item)
+                    @foreach ($roles as $item)
                     <tr>
-                        <td>{{$item->id_empleados}}</td>
-                        <td>{{$item->nombre_empleado}}</td>
-                        <td>{{$item->correo}}</td>
-                        <td>{{$item->telefono}}</td>
-                        <td>{{$item->fecha_nacimiento}}</td>
-                        <td>{{$item->fecha_ingreso}}</td>
-                        <td>{{$item->direccion}}</td>
                         <td>{{$item->id_rol}}</td>
-                        <td>{{$item->id_area}}</td>
+                        <td>{{$item->nombre_rol}}</td>
+                    
                         <td>
                         {{-- boton para modificar --}}
-                        <a class="btn btn-primary btn-sm" href="/products/edit/{{$item->id_empleados}}">Modificar</a>
+                        <a class="btn btn-primary btn-sm" href="/products/edit/{{$item->id_rol}}">Modificar</a>
                         {{-- boton para eliminar --}}
-                        <button class="btn btn-danger btn-sm" url="/products/destroy/{{$item->id_empleados}}" onclick="destroy(tdis)" token="{{csrf_token()}}">Eliminar</button>
+                        <button class="btn btn-danger btn-sm" url="/products/destroy/{{$item->id_rol}}" onclick="destroy(tdis)" token="{{csrf_token()}}">Eliminar</button>
                         </td>
                     </tr>
                     @endforeach

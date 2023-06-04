@@ -1,5 +1,6 @@
 <?php
-use App\Http\Controllers\InicioController;
+use App\Http\Controllers\RolesController;
+use App\Http\Controllers\AreaController;
 use App\Http\Controllers\EmpleadosController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -32,9 +33,13 @@ Route::get('/InicioSupervisor', function () {
 });
 
 
-// ruta para mostrar empleados
-
+// ruta para mostrar  vista empleado
 Route::get('/CrudEmpleado/show',[EmpleadosController::class, 'index']);
+// ruta para mostrar  vista roles
+Route::get('/CrudRoles/show',[RolesController::class, 'index']);
+// ruta para mostrar  vista area
+Route::get('/CrudArea/show',[AreaController::class, 'index']);
+
 
 
 Auth::routes();

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AreaModel;
 use Illuminate\Http\Request;
 
 class AreaController extends Controller
@@ -12,6 +13,9 @@ class AreaController extends Controller
     public function index()
     {
         //
+        
+        $area = AreaModel::all();
+        return view('/CrudArea/show', compact('area'));
     }
 
     /**

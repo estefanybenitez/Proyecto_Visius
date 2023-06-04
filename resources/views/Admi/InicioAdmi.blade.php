@@ -20,6 +20,8 @@
 
   </head>
   <body class="p-3 m-0 border-0 bd-example">
+
+    <h3> Navbar de Prueba</h3>
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,8 +32,14 @@
             <li class="nav-item">
               <a class="nav-link active coloropcion" aria-current="page" href="/CrudEmpleado/show" > Gestionar Empleados</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
               <a class="nav-link active coloropcion" aria-current="page" href="/CrudUsuario/show" >Gestionar Usuarios</a>
+            </li> --}}
+            <li class="nav-item">
+              <a class="nav-link active coloropcion" aria-current="page" href="/CrudRoles/show" >Tabla Roles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active coloropcion" aria-current="page" href="/CrudArea/show" >Tabla Area</a>
             </li>
          
           </ul>
