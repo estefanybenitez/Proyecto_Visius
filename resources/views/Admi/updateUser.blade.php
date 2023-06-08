@@ -16,7 +16,7 @@
 <link rel="shortcut icon" href="./imgs/icon.ico">
     <title>Visius</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    <h3 class="display-5 fw-bolder"><span class="text-gradient d-inline">Crear Usuario <i class="bi bi-pencil"></i> </span></h3>
+    <h3 class="display-5 fw-bolder"><span class="text-gradient d-inline">Actualizar Informacion <i class="bi bi-pencil-square"></i> </span></h3>
     <br>
     <br>
 
@@ -28,6 +28,19 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+                        <div class="row mb-3">
+                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('ID') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control @error('id') is-invalid @enderror" name="name" value="{{ old('id') }}" required autocomplete="name" autofocus>
+
+                                @error('id')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
 
                         <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Nombre') }}</label>
@@ -97,7 +110,7 @@
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('Actualizar') }}
                                 </button>
                             </div>
                         </div>

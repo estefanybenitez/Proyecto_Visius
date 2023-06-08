@@ -1,123 +1,55 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <!--carousel-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+@extends('layouts.appSup')
+<!--Main Menu Admin-->
+
+@section('content')
 
 
-   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+<!-- Bootstrap icons-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="./css/menusup.css">
-    <link rel="shortcut icon" href="./imgs/logosup.ico">
 
-    <title>Visius Menu</title>
+<link rel="stylesheet" type="text/css" href="./css/menusuper.css">
+    <title>Visius</title>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
   </head>
   <body class="p-3 m-0 border-0 bd-example">
-     
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="http://localhost/visius/public/visius_supervisores"><img src="../imgs/logosup.ico" class="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: century gothic;">
-            <li class="nav-item">
-              <a class="nav-link active coloropcion" aria-current="page" href="http://localhost/visius/public/visius_ver_empleados" >Empleados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active coloropcion" aria-current="page" href="http://localhost/visius/public/visius_asignar_tareas" >Asignar Tareas</a>
-            </li>
-          </ul>
-          <div class="d-flex" role="search">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: century gothic;">
-            <li class="nav-item">
-              <a class="nav-link active coloropcion" aria-current="page" href="http://localhost/visius/public/visius_mi_info_supervisor"><i class="bi bi-person-circle"></i> Mi Info</a>
-            </li>
-            <li class="nav-item" >
-              <a class="nav-link active coloropcion" aria-current="page" href="http://localhost/visius/public/login"><i class="bi bi-arrow-right-square"></i> Salir</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  
     
-    <!--carousel-->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../imgs/bannersup1.png" class="d-block w-100 bd-placeholder-img bd-placeholder-img-lg" width="800px" height="400px" alt="..." role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+  <h3 class="display-5 fw-bolder"><span class="text-gradient d-inline">Bienvenid@</span></h3>
+  @endsection
 
-        </div>
-        <div class="carousel-item">
-        <img src="../imgs/bannersup2.png" class="d-block w-100 bd-placeholder-img bd-placeholder-img-lg" width="800px" height="400px" alt="..." role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+  @section('contenido1')
+  <p class="lead fw-light mb-4">Aqui puedes gestionar las tareas del personal a tu cargo!</p>
+@endsection
+
+
+@section('contenido2')
+<p class="text-muted">Recuerda! Estar pendiente de marcar como Finalizada una tarea cuando un empleado lo reporta!</p>
+@endsection
+
+@section('contenido3')
+<p class="text-muted">Hecha un vistazo a nuestras actividades y dinámicas en nuestras redes sociales!!</p>
+@endsection
+
+@section('contenido4')
+<div class="d-flex justify-content-center fs-2 gap-4">
+    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
+    <a class="text-gradient" href="#!"><i class="bi bi-facebook"></i></a>
+    <a class="text-gradient" href="#!"><i class="bi bi-instagram"></i></a>
+</div>
+@endsection
     
-        </div>
-        <div class="carousel-item">
-            <img src="../imgs/bannersup3.png" class="d-block w-100 bd-placeholder-img bd-placeholder-img-lg" width="800px" height="400px" alt="..." role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-    
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
-     <!--About section-->
-     <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Bienvenid@</span></h2>
-                                <p class="lead fw-light mb-4">Aqui puedes gestionar las tareas del personal a tu cargo!</p>
-                                <p class="text-muted">Recuerda! Estar pendiente de marcar como Finalizada una tarea cuando un empleado lo reporta!</p>
-                                <p class="text-muted">Hecha un vistazo a nuestras actividades y dinámicas en nuestras redes sociales!!</p>
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-facebook"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-      <!--Footer-->
-      <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Visius Inc. 2023</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacidad</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Términos</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contacto</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+      
 
   </body>
 </html>
+@yield('script')
+

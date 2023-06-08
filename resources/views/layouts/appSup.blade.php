@@ -1,5 +1,5 @@
 <!doctype html>
-<!--BARRA DE PRINCIPAL VISIUS ADMIN-->
+<!--BARRA DE PRINCIPAL VISIUS Supervisors-->
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="/public/imgs/icon.ico">
+    <link rel="shortcut icon" href="/public/imgs/logosup.ico">
 
     <title>{{ config('app.name', 'Visius') }}</title>
     
@@ -19,7 +19,7 @@
     <!-- Scripts -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="/public/css/menuadmin.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/menusup.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     
@@ -38,7 +38,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="http://127.0.0.1:8000/home">
                     
-                    <img src="../imgs/icon.ico" class="logo">
+                    <img src="../imgs/logosup.ico" class="logo">
 
                     {{ config('app.name', 'Visius') }}
                     
@@ -71,11 +71,11 @@
                             </li>
 
                             <li class="nav-item coloropcion">
-                                <a class="nav-link active" href="/createUser">Crear</a>
+                                <a class="nav-link active" href="/createUser">Crear Tarea</a>
                             </li>
 
                             <li class="nav-item coloropcion">
-                                <a class="nav-link active" href="/updateUser">Actualizar</a>
+                                <a class="nav-link active" href="/updateUser">Asignar Tarea</a>
                             </li>
                         </div>
                     </ul>

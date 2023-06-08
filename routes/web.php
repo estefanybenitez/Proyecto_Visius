@@ -1,12 +1,13 @@
 <?php
-use App\Http\Controllers\DetalleTareaController;
-use App\Http\Controllers\EstadoTareaController;
-use App\Http\Controllers\RolesController;
-use App\Http\Controllers\AreaController;
-use App\Http\Controllers\TareasController;
-use App\Http\Controllers\EmpleadosController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AreaController;
+use App\Http\Controllers\RolesController;
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\TareasController;
+use App\Http\Controllers\EmpleadosController;
+use App\Http\Controllers\EstadoTareaController;
+use App\Http\Controllers\DetalleTareaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,3 +58,14 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Route::get('/IAdmi', [App\Http\Controllers\InicioController::class, 'vista'])->name('IAdmi');
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/readUsers', [UsersController::class, 'index']); //ver users
+
+Route::get('/createUser', function () {
+    return view('/auth/register');
+});
+
+Route::get('/updateUser', function () {
+    return view('/Admi/updateUser');
+});

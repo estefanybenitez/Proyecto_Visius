@@ -1,21 +1,20 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
-use App\Models\EmpleadosModel;
 use Illuminate\Http\Request;
+use App\Models\User;
 
-class EmpleadosController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // vista carpeta/archivo
-        $empleados = EmpleadosModel::all();
-        return view('/CrudEmpleado/show', compact('empleados')) ;
+        //
+        $users = User::all();
+        return view('/Admi/readUsers', compact('users')) ;
     }
 
     /**
